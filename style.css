@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-cont {
+    display: flex;
+    justify-content: start;
+    
+}
+.line {
+    width: 16vw;
+    transform: rotate(90);
+    position: absolute;
+    top: 20%;
+    transform: translate(-50%, -50%);
+}
+.line-left {
+    left: 0%;
+    transform: rotate(90deg);
+}
+.line-right {
+    left: 85%;
+    transform: rotate(90deg);
+}
+#title-text {
+    font-size: 3em;
+    font-weight: normal;
+    text-align: center;
+    font-style: italic;
+    margin-top: 50px;
+    animation: title-fade 1s forwards ease;
+}
+@keyframes title-fade {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+.inner-border {
+    width: 70vw;
+    background-color:slategrey;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+
+}
+
+.text {
+    width: 100%;
+    height: 100%;
+}
+.text h1 {
+    font-size: 3vw;
+    font-weight: normal;
+    margin: 15px 15px;
+    }
+.text img {
+    width: 80vw;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    filter: opacity(20%);
+    object-fit: cover;
+    pointer-events: none;
+    visibility: hidden;
+
+}
+/* fade the background img in*/
+body .fade-in {
+    animation: fade-in 3s;
+    visibility: visible;
+}
+@keyframes fade-in {
+    from {
+        filter: opacity(0%);
+    }
+    to {
+        filter: opacity(20%);
+    }
+}
+
+/* new passage button */
+#new-text {
+    width: fit-content;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    background-color: slategray;
+    border: none;
+    border-radius: 10px;
+    
+}
+#new-text:hover {
+    background-color:goldenrod;
+    cursor: pointer;
+}
+#new-text:active {
+    transform: scale(.95);
+}
+
+.hide-btn {
+    visibility: hidden;
+}
+
+.speed-buttons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 80%;
+    left: 4%;
+    gap: 5px;
+}
+.speed-buttons button {
+    width: max(8vw, 90px);
+    height: clamp(30px, 5vw, 40px);
+    padding: 10px;
+    background-color: slategray;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.speed-buttons button:hover {
+    background-color:gainsboro;
+    cursor: pointer;
+}
+.speed-buttons button:active {
+    transform: scale(.95);
+}
+.speed-buttons .speed-selected {
+    background-color: gainsboro;
+}

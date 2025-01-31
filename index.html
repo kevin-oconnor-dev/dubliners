@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Dubliners</title>
+</head>
+<body>
+    <h2 id="title-text">Dubliners</h2>
+    <div class="flex-wrapper">
+        <div class="main-cont">
+            <img class="line line-left" src="img/line.png">
+            <div class="speed-buttons">
+                <button id="fastest" onclick="changeFastest()">Fastest</button>
+                <button id="fast" onclick="changeFast()">Fast</button>
+                <button id="normal" class="speed-selected" onclick="changeNormal()">Normal</button>
+            </div>
+            <div class="inner-border">
+                <div class="text">
+                    <h1 id="typedtext">
+                    </h1>
+                    <img id="background-img" src="">
+                </div>
+            </div>
+            <img class="line line-right" src="img/line.png">
+        </div>
+        <button id="new-text" onclick="newPassage()">New Passage</button>
+    </div>
+</body>
+</html>
