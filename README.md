@@ -1,4 +1,4 @@
-# dubliners
+# Dubliners
 Welcome!
 This is a silly little project with the goal of creating a random passage generator for sections of James Joyce's short story collect Dubliners.
 A random passage of the text will animate on your screen!
