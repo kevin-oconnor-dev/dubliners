@@ -109,6 +109,7 @@ body .fade-in {
     border: none;
     border-radius: 10px;
     color: black;
+    -webkit-appearance: none;
     
 }
 #new-text:hover {
