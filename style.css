@@ -136,6 +136,7 @@ body .fade-in {
     width: max(8vw, 90px);
     height: clamp(30px, 5vw, 40px);
     padding: 10px;
+    color: black;
     background-color: slategray;
     border: 1px solid black;
     border-radius: 4px;
